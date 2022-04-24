@@ -11,7 +11,10 @@ $(function() {
         let ul = $(".todo-list");
         // 追加するもの
         let addNode1 =$("<li>").text(value);
+        let deleteBtn =$("<div>").addClass("delete").text("削除");
+        
         ul.append(addNode1);
+        $(addNode1).append(deleteBtn);
        
     });
 
